@@ -34,34 +34,6 @@ $("#start").on("click", function (e) {
     }
 });
 
-// $("#saveas").click(function (e) {
-//     saveText(Content);
-// });
-
-// async function saveText(content) {
-//     const options = {
-//         types: [
-//           {
-//             description: 'Text Files',
-//             accept: {
-//               'text/plain': ['.txt','.pdf'],
-//             },
-//           },
-//         ],
-//       };
-//     const handle = await window.showSaveFilePicker(options);
-
-//     const writable = await handle.createWritable();
-//     // Write the contents of the file to the stream.
-//     await writable.write(content);
-//     // Close the file and write the contents to disk.
-//     await writable.close();
-// }
-
-// $("#load").click(function(){
-//     console.log(Content);
-    
-// })
 
 function download(filename, text) {
     var element = document.createElement('a');
@@ -79,22 +51,6 @@ function saveText(){
     var x = document.getElementById("textarea").value;
     download("hello.txt",x);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 document.getElementById('inp')
